@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        textarea {
+            width: 25%;
+        }
+
+        .submitBtn {
+            align-self:flex-start;
+        }
+
+        button {
+            padding: 5px;
+            margin: 5px;
+        }
+
+        button>a {
+            outline: none;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Me</h1>
+    <h2>Don't hesitate to contact me on:</h2>
+    <ul>
+        <li>Email</li>
+        <li>LinkedIn</li>
+        <li>Instagram</li>
+    </ul>
+    <h3>If it's easier for you can contact me here:</h3>
+    <form action="submit">
+        <label for="name">Your name
+            <input type="text" id="name" name="name">
+        </label>
+        <label for="email">Your email
+            <input type="email" name="email" id="email">
+        </label>
+        <textarea name="formText" id="formText" cols="30" rows="10" maxlength="500" placeholder="Write here..."></textarea>
+        <button type="submit" class="submitBtn">Submit</button>
+    </form>
+    <button><a href="http://localhost:8080/">Back Home</a></button>
+</body>
+</html>
